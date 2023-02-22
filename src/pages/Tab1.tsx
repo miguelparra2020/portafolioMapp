@@ -1,12 +1,15 @@
 
-import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonChip, IonContent, IonHeader,  IonLabel,  IonPage, } from '@ionic/react';
+import { IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonChip, IonContent, IonFab, IonFabButton, IonHeader,  IonIcon,  IonLabel,  IonModal,  IonPage, IonTitle, IonToolbar, } from '@ionic/react';
 import './Tab1.css';
 // import {   flagOutline } from 'ionicons/icons';
 import Toolbar from '../components/Toolbar';
+import { add } from 'ionicons/icons';
+import React, { useState } from 'react';
 
 
 const Tab1: React.FC = () => {
-  
+  const [isOpen, setIsOpen] = useState(false);
+
   //Ingresar el arreglo de todos los depositos
   let depositos = [{id:1,fecha:"15-02-2023",valor:50000,concepto:"Ingreso de Dinero para prestar", comprobante: "https://www.facebook.com/"},{id:2,fecha:"20-02-2023",valor:30000,concepto:"Pago Cuota N1. Credito DD01 a nombre de Jennifer", comprobante: "https://www.instagram.com/"}];
   let depositosRevertidos = depositos.reverse();
@@ -107,31 +110,39 @@ const Tab1: React.FC = () => {
           </IonCard>     
           </div>
         </div>
+  
         {/* Contenedor */}
+
+        {/* Fab añadir */}
+        <IonFab slot="fixed" vertical="bottom" horizontal="end">
+          <IonFabButton onClick={() => setIsOpen(true)}>
+            <IonIcon icon={add}></IonIcon>
+          </IonFabButton>
+        </IonFab>
             
         {/* Modal de Ejemplo */}
 
-
-        {/* <IonButton expand="block" onClick={() => setIsOpen(true)}>
-          Open
-        </IonButton>
         <IonModal isOpen={isOpen}>
           <IonHeader>
             <IonToolbar>
-              <IonTitle>Deposito</IonTitle>
+              <IonTitle>Depositos o Retiros</IonTitle>
               <IonButtons slot="end">
                 <IonButton onClick={() => setIsOpen(false)}>Cerrar</IonButton>
               </IonButtons>
             </IonToolbar>
           </IonHeader>
           <IonContent className="ion-padding">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-              reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui.
-              Eaque, dicta.
-            </p>
+          <Iframe url="https://www.appsheet.com/start/33e88794-aa19-4bc4-8699-c2824835688d"
+                width="100%"
+                height="100%"
+                id=""
+                allowFullScreen 
+                styles={{border: "0px"}}
+                className=""
+                display="block"
+                position="relative"/>
           </IonContent>
-        </IonModal> */}
+        </IonModal> 
       </IonContent>
     </IonPage>
   );
