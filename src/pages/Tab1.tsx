@@ -8,13 +8,13 @@ import Toolbar from '../components/Toolbar';
 const Tab1: React.FC = () => {
   
   //Ingresar el arreglo de todos los depositos
-  let depositos = [{id:1,fecha:"15-02-2023",valor:50000,concepto:"Ingreso de Dinero para prestar", comprobante: "https:google.com"},{id:2,fecha:"20-02-2023",valor:30000,concepto:"Pago Cuota N1. Credito DD01 a nombre de Jennifer", comprobante: "https:google.com"}];
+  let depositos = [{id:1,fecha:"15-02-2023",valor:50000,concepto:"Ingreso de Dinero para prestar", comprobante: "https://www.facebook.com/"},{id:2,fecha:"20-02-2023",valor:30000,concepto:"Pago Cuota N1. Credito DD01 a nombre de Jennifer", comprobante: "https://www.instagram.com/"}];
   let depositosRevertidos = depositos.reverse();
   // Total Depositos
   let depositosMap = depositos.map(item => item.valor);
   let totalDepositos = depositosMap.reduce((a, b) => a + b, 0);
   //Ingresar el arreglo de todos los retiros
-  let retiros = [{id:1,fecha:"15-02-2023",valor:20000,concepto:"Retiro de Dinero para Pagar Cosas", comprobante: "https:google.com"},{id:2,fecha:"20-02-2023",valor:10000,concepto:"Retiro de Dinero a Solicitud", comprobante: "https:google.com"}];
+  let retiros = [{id:1,fecha:"15-02-2023",valor:20000,concepto:"Retiro de Dinero para Pagar Cosas", comprobante: "https://www.instagram.com/"},{id:2,fecha:"20-02-2023",valor:10000,concepto:"Retiro de Dinero a Solicitud", comprobante: "https://www.facebook.com/"}];
   let retirosRevertidos = retiros.reverse();
   // Total Retiros
   let retirosMap = retiros.map(item => item.valor);
@@ -99,7 +99,7 @@ const Tab1: React.FC = () => {
                   </IonChip >
                   <br/>
                   <IonLabel>Concepto:{item.concepto}</IonLabel>
-                  <IonButton expand="block" color="danger">Soporte</IonButton>
+                  <IonButton expand="block" color="danger"  href={item.comprobante} target="_blank">Soporte</IonButton>
                   </div>
                 )
               }
