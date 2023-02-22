@@ -3,7 +3,6 @@ import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, 
 import './Tab1.css';
 // import {   flagOutline } from 'ionicons/icons';
 import Toolbar from '../components/Toolbar';
-import { useState } from 'react';
 
 
 const Tab1: React.FC = () => {
@@ -17,7 +16,6 @@ const Tab1: React.FC = () => {
   let retiros = [{id:1,fecha:"15-02-2023",valor:20000},{id:2,fecha:"20-02-2023",valor:10000}];
   let retirosRevertidos = retiros.reverse();
 
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <IonPage>
       <IonHeader>
