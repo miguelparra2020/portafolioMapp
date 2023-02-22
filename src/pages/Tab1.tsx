@@ -1,5 +1,5 @@
 
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonChip, IonContent, IonHeader,  IonLabel,  IonPage, } from '@ionic/react';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonChip, IonContent, IonHeader,  IonIcon,  IonLabel,  IonPage, } from '@ionic/react';
 import './Tab1.css';
 // import {   flagOutline } from 'ionicons/icons';
 import Toolbar from '../components/Toolbar';
@@ -51,8 +51,7 @@ const Tab1: React.FC = () => {
               {
                 depositosRevertidos.map(item =>
                   <div className='contenido_depo'>
-                  <h3>Id:</h3>
-                  <IonLabel>{item.id}</IonLabel>
+                  <IonLabel>Id:{item.id}</IonLabel>
                   <br />
                   <IonLabel>Fecha:{item.fecha}</IonLabel>
                   <br />
@@ -62,6 +61,7 @@ const Tab1: React.FC = () => {
                   </IonChip >
                   <br/>
                   <IonLabel>Concepto:{item.concepto}</IonLabel>
+                  <IonButton expand="block" color="success">Soporte</IonButton>
                   </div>
                 )
               }
