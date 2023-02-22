@@ -5,6 +5,7 @@ import './Tab1.css';
 import Toolbar from '../components/Toolbar';
 import { add } from 'ionicons/icons';
 import React, { useState } from 'react';
+import Iframe from 'react-iframe'
 
 
 const Tab1: React.FC = () => {
