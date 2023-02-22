@@ -1,5 +1,5 @@
 
-import { IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonChip, IonContent, IonHeader, IonItem, IonLabel, IonModal, IonPage, IonTitle, IonToolbar    } from '@ionic/react';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonChip, IonContent, IonHeader,  IonLabel,  IonPage, } from '@ionic/react';
 import './Tab1.css';
 // import {   flagOutline } from 'ionicons/icons';
 import Toolbar from '../components/Toolbar';
