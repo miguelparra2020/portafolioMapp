@@ -13,7 +13,7 @@ const Tab1: React.FC = () => {
   let depositos = [{id:1,fecha:"15-02-2023",valor:50000,concepto:"Ingreso de Dinero para prestar", comprobante: "https:google.com"},{id:2,fecha:"20-02-2023",valor:30000,concepto:"Pago Cuota N1. Credito DD01 a nombre de Jennifer", comprobante: "https:google.com"}];
   let depositosRevertidos = depositos.reverse();
   //Ingresar el arreglo de todos los retiros
-  let retiros = [{id:1,fecha:"15-02-2023",valor:20000},{id:2,fecha:"20-02-2023",valor:10000}];
+  let retiros = [{id:1,fecha:"15-02-2023",valor:20000,concepto:"Retiro de Dinero para Pagar Cosas", comprobante: "https:google.com"},{id:2,fecha:"20-02-2023",valor:10000,concepto:"Retiro de Dinero a Solicitud", comprobante: "https:google.com"}];
   let retirosRevertidos = retiros.reverse();
 
   return (
@@ -61,7 +61,7 @@ const Tab1: React.FC = () => {
                   </IonChip >
                   <br/>
                   <IonLabel>Concepto:{item.concepto}</IonLabel>
-                  <IonButton expand="block" color="success">Soporte</IonButton>
+                  <IonButton expand="block" color="success" href={item.comprobante} target="_blank">Soporte</IonButton>
                   </div>
                 )
               }
@@ -74,6 +74,7 @@ const Tab1: React.FC = () => {
           <IonCard >
             <IonCardHeader>
               <IonCardTitle>Retiros</IonCardTitle>
+              <IonCardSubtitle>Total retiros: <br /><IonLabel color="danger">💵 $50.000</IonLabel></IonCardSubtitle>
             </IonCardHeader>
             <IonCardContent>
               {
@@ -82,9 +83,14 @@ const Tab1: React.FC = () => {
                   <IonLabel>id:{item.id}</IonLabel>
                   <br />
                   <IonLabel>fecha:{item.fecha}</IonLabel>
+                  <br />
+                  <IonLabel>Valor:</IonLabel>
                   <IonChip color="danger">
                     💵 ${new Intl.NumberFormat('de-DE').format(item.valor)}
                   </IonChip >
+                  <br/>
+                  <IonLabel>Concepto:{item.concepto}</IonLabel>
+                  <IonButton expand="block" color="danger">Soporte</IonButton>
                   </div>
                 )
               }
