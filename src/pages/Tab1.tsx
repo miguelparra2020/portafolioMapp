@@ -6,15 +6,22 @@ import Toolbar from '../components/Toolbar';
 
 
 const Tab1: React.FC = () => {
-  // Ingresar dato del saldo actual
-  let sal = 500000;
-  let saldo = new Intl.NumberFormat('de-DE').format(sal);
+  
   //Ingresar el arreglo de todos los depositos
   let depositos = [{id:1,fecha:"15-02-2023",valor:50000,concepto:"Ingreso de Dinero para prestar", comprobante: "https:google.com"},{id:2,fecha:"20-02-2023",valor:30000,concepto:"Pago Cuota N1. Credito DD01 a nombre de Jennifer", comprobante: "https:google.com"}];
   let depositosRevertidos = depositos.reverse();
+  // Total Depositos
+  let depositosMap = depositos.map(item => item.valor);
+  let totalDepositos = depositosMap.reduce((a, b) => a + b, 0);
   //Ingresar el arreglo de todos los retiros
   let retiros = [{id:1,fecha:"15-02-2023",valor:20000,concepto:"Retiro de Dinero para Pagar Cosas", comprobante: "https:google.com"},{id:2,fecha:"20-02-2023",valor:10000,concepto:"Retiro de Dinero a Solicitud", comprobante: "https:google.com"}];
   let retirosRevertidos = retiros.reverse();
+  // Total Retiros
+  let retirosMap = retiros.map(item => item.valor);
+  let totalRetiros = retirosMap.reduce((a, b) => a + b, 0);
+  // Saldo actual
+  let sal = totalDepositos-totalRetiros;
+  let saldo = new Intl.NumberFormat('de-DE').format(sal);
 
   return (
     <IonPage>
@@ -45,7 +52,9 @@ const Tab1: React.FC = () => {
           <IonCard >
             <IonCardHeader>
               <IonCardTitle>Depositos</IonCardTitle>
-              <IonCardSubtitle>Total depositos: <br /><IonLabel color="success">💵 $50.000</IonLabel></IonCardSubtitle>
+              <IonCardSubtitle>Total depositos: <br /><IonLabel color="success">💵 ${new Intl.NumberFormat('de-DE').format(totalDepositos)}</IonLabel></IonCardSubtitle>
+              
+
             </IonCardHeader>
             <IonCardContent>
               {
@@ -74,7 +83,7 @@ const Tab1: React.FC = () => {
           <IonCard >
             <IonCardHeader>
               <IonCardTitle>Retiros</IonCardTitle>
-              <IonCardSubtitle>Total retiros: <br /><IonLabel color="danger">💵 $50.000</IonLabel></IonCardSubtitle>
+              <IonCardSubtitle>Total retiros: <br /><IonLabel color="danger">💵 ${new Intl.NumberFormat('de-DE').format(totalRetiros)}</IonLabel></IonCardSubtitle>
             </IonCardHeader>
             <IonCardContent>
               {
