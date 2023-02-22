@@ -36,12 +36,16 @@
 .contenido_depo{
     margin-top: 5px;
     padding: 5px;
-    background-color: #f5fff9;
+    background-color: #fcfffd;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
 }
 .contenido_reti{
     margin-top: 5px;
     padding: 5px;
-    background-color: #fef1f0;
+    background-color: #fffaf9;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
 }
 
 

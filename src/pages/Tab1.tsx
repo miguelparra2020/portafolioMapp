@@ -51,9 +51,12 @@ const Tab1: React.FC = () => {
               {
                 depositosRevertidos.map(item =>
                   <div className='contenido_depo'>
-                  <IonLabel>Id:{item.id}</IonLabel>
+                  <h3>Id:</h3>
+                  <IonLabel>{item.id}</IonLabel>
                   <br />
                   <IonLabel>Fecha:{item.fecha}</IonLabel>
+                  <br />
+                  <IonLabel>Valor:</IonLabel>
                   <IonChip color="success">
                     💵 ${new Intl.NumberFormat('de-DE').format(item.valor)}
                   </IonChip >
