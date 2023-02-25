@@ -3,13 +3,15 @@ import { newspaper } from 'ionicons/icons';
 import  { useState, useEffect } from 'react';
 import './dataDepRet.css';
 
+import {DATADEPRET} from '../environment'
+
 function DataDepRet() {
   
 
   const [datos, setDatos] = useState<any>(null);
 
   async function obtenerDatos() {
-    const respuesta = await fetch('https://docs.google.com/spreadsheets/d/132Z4lICYg0gX0mrHc3VLXowLii7h2ny0pQdeCYlg9Wg/gviz/tq?tqx=out:json&gid=0');
+    const respuesta = await fetch(DATADEPRET);
     const datos = await respuesta.text();
     const data = datos.slice(47, -2);
     const json_data = JSON.parse(data);
