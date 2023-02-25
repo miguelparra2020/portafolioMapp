@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import {  IonContent, IonHeader,    IonLabel,    IonPage, IonSegment, IonSegmentButton,   } from '@ionic/react';
+import {  IonContent, IonHeader,       IonPage,   } from '@ionic/react';
 // import {   flagOutline } from 'ionicons/icons';
-import Iframe from 'react-iframe';
+// import Iframe from 'react-iframe';
 import Toolbar from '../components/Toolbar';
 import './Tab1.css';
+import DataDepRet from '../components/dataDepRet';
 
 
 
@@ -19,18 +20,11 @@ const Tab1: React.FC = () => {
           <Toolbar/>
       </IonHeader>
       <IonContent fullscreen >
-      <IonSegment color="primary" value="primary">
-        <IonSegmentButton value="primary">
-          <IonLabel>Saldo Actual</IonLabel>
-        </IonSegmentButton>
-        <IonSegmentButton value="segment">
-          <IonLabel>Depositos y Retiros</IonLabel>
-        </IonSegmentButton>
-      </IonSegment>
-
+      {/* Data */}
+      <DataDepRet/>
       {/* Data */}
       
-      <Iframe url="https://www.appsheet.com/start/3de2a3cc-0502-40d0-9db3-8dc1702fa648"
+      {/* <Iframe url="https://www.appsheet.com/start/3de2a3cc-0502-40d0-9db3-8dc1702fa648"
                 width="100%"
                 height="90%"
                 id=""
@@ -38,7 +32,7 @@ const Tab1: React.FC = () => {
                 styles={{border: "0px"}}
                 className=""
                 display="block"
-                position="relative"/>
+                position="relative"/> */}
         
       </IonContent>
     </IonPage>

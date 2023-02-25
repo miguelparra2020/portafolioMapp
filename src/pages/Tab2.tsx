@@ -3,14 +3,14 @@ import {
   IonContent,
   IonHeader,
   IonPage,
-  IonTitle,
   IonToolbar,
   IonList,
   IonItem,
 } from "@ionic/react";
 import './Tab2.css';
+import Toolbar from "../components/Toolbar";
+import DataDepRet from '../components/dataDepRet';
 
-import MiComponente from '../components/theComponent';
 
 
 const Tab2: React.FC = () => {
@@ -19,11 +19,11 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+        <Toolbar/>
         </IonToolbar>
       </IonHeader>
       <IonContent>
-      <MiComponente/>
+      <DataDepRet/>
         <IonItem>
         </IonItem>
         <IonList>
