@@ -19,7 +19,7 @@ function MiComponente() {
     obtenerDatos();
   }, 60000);
 
-  https://drive.google.com/file/d/1LewCkVlxYelhjDy2FEZGJ-HMBWb70PRN/view?usp=share_link
+//   https://drive.google.com/file/d/1LewCkVlxYelhjDy2FEZGJ-HMBWb70PRN/view?usp=share_link
 
   console.log(datos)
 
