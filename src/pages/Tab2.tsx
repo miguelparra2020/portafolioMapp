@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+
 import {
   IonContent,
   IonHeader,
@@ -7,7 +7,6 @@ import {
   IonToolbar,
   IonList,
   IonItem,
-  IonLabel
 } from "@ionic/react";
 import './Tab2.css';
 
