@@ -10,6 +10,8 @@ import {
 } from "@ionic/react";
 import './Tab2.css';
 
+import MiComponente from '../components/theComponent';
+
 
 const Tab2: React.FC = () => {
   
@@ -21,6 +23,7 @@ const Tab2: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
+      <MiComponente/>
         <IonItem>
         </IonItem>
         <IonList>
