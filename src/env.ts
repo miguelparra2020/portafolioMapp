@@ -1,0 +1,1 @@
+export const URLDEPOSITOS = 'https://docs.google.com/spreadsheets/d/1mMyAMyGXj24nKALJY5iFej57GfqJ57_gcZvVjUwo7Jg/gviz/tq?tqx=out:json&gid=0';
