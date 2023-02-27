@@ -4,8 +4,6 @@ import {
   IonHeader,
   IonPage,
   IonToolbar,
-  IonList,
-  IonItem,
 } from "@ionic/react";
 import './Tab2.css';
 import Toolbar from "../components/Toolbar";
