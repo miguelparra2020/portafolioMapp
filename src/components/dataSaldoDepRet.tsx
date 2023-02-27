@@ -23,7 +23,7 @@ function DataSaldoDepRet() {
   }, []);
   setInterval(() => {
     obtenerDatos();
-  }, 60000);
+  }, 1800000);
 
 
   console.log(datos)

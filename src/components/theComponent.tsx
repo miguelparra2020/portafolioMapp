@@ -17,7 +17,7 @@ function MiComponente() {
   }, []);
   setInterval(() => {
     obtenerDatos();
-  }, 60000);
+  }, 120000);
 
 
   console.log(datos)

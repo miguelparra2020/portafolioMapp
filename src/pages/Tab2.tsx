@@ -9,7 +9,7 @@ import {
 } from "@ionic/react";
 import './Tab2.css';
 import Toolbar from "../components/Toolbar";
-import DataDepRet from '../components/dataDepRet';
+import DataCuotas from '../components/dataCuotas';
 
 
 
@@ -23,11 +23,7 @@ const Tab2: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-      <DataDepRet/>
-        <IonItem>
-        </IonItem>
-        <IonList>
-        </IonList>
+      <DataCuotas/>
       </IonContent>
     </IonPage>
   );
