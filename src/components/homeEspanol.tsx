@@ -15,8 +15,6 @@ const HomeEspanol: React.FC = () => {
             <span>Me gustan los retos, porque siempre pienso en soluciones y alternativas a todos los obstáculos que se presentan. </span><br />
             <span>Soy introvertido porque me gusta observar y apreciar el entorno, pero se trabajar en equipo y valorar a los demás, 
             le doy gracias a Dios por el presente y las oportunidades que me da. </span>
-            
-
             </div>
         </div>
     );
