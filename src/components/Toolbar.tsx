@@ -5,9 +5,9 @@ const Toolbar: React.FC = () => {
         <div id="toolbar">
             <IonToolbar>
                 <IonAvatar slot="start" id='avatar'>
-                    <IonImg src="/assets/img/icon.jpg" id='img'></IonImg>
+                    <IonImg src="https://res.cloudinary.com/ddllgbo70/image/upload/v1638329235/assetsPortafolioMiguelPaez/miguelFoto400x400Webp_pfpnps.webp" id='img'></IonImg>
                 </IonAvatar>
-                <IonTitle>Credifamiliar</IonTitle>
+                <IonTitle>Miguel Páez</IonTitle>
             </IonToolbar>
         </div>
     );

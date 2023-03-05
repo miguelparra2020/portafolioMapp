@@ -1,0 +1,98 @@
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleHome{
+    font-family: __sfPro_e3af5c, __sfPro_Fallback_e3af5c, system-ui, sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: -1.44px;
+    line-height: 70px;
+    text-decoration: none solid rgba(0, 0, 0, 0);
+    text-align: center;
+
+    
+}
+.spanEnglish{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 16ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+}
+.spanEspanol{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 21ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+}
+.spanFrances{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 20ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+}
+
+.avatarPerfil{
+    width: 100px;
+    height: 100px;
+    background-color:  #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px 5px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    animation-duration: 7s;
+    animation-name: slidein;
+}
+
+.detallePerfil{
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 60rem;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none solid rgb(107, 114, 128);
+    text-align: center;
+    vertical-align: top;
+    word-spacing: 0px;
+    animation-duration: 8s;
+    animation-name: slidein;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .titleHome{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;       
+    }
+}
+
+@keyframes slidein {
+    from {
+      opacity:  0%;
+    }
+  
+    to {
+        opacity: 100%;
+    }
+  }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
