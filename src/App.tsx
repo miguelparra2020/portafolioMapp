@@ -2,7 +2,6 @@ import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
   IonIcon,
-  IonLabel,
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
@@ -10,7 +9,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { cashOutline, chatbubbleEllipsesOutline, checkmarkDoneCircleOutline, closeCircleOutline,  fileTrayStackedOutline } from 'ionicons/icons';
+import {  chatboxEllipsesOutline,   constructOutline,   homeOutline, schoolOutline } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -34,7 +33,6 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import Tab4 from './pages/Tab4';
-import Tab5 from './pages/Tab5';
 
 setupIonicReact();
 
@@ -55,33 +53,22 @@ const App: React.FC = () => (
           <Route path="/tab4">
             <Tab4 />
           </Route>
-          <Route path="/tab5">
-            <Tab5 />
-          </Route>
           <Route exact path="/">
             <Redirect to="/tab1" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
         <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon color="success" icon={cashOutline} />
-            <IonLabel>Saldo</IonLabel>
+            <IonIcon color='dark' icon={homeOutline} />
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon color="success" icon={checkmarkDoneCircleOutline} />
-            <IonLabel >Activas</IonLabel>
+            <IonIcon color="dark" icon={constructOutline} />
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon color="warning" icon={closeCircleOutline} />
-            <IonLabel>Terminadas</IonLabel>
+            <IonIcon color="dark" icon={schoolOutline} />
           </IonTabButton>
           <IonTabButton tab="tab4" href="/tab4">
-            <IonIcon  color="primary" icon={fileTrayStackedOutline} />            
-            <IonLabel>Solicitudes</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab5" href="/tab5">
-            <IonIcon color="primary" icon={chatbubbleEllipsesOutline} />            
-            <IonLabel>Chat</IonLabel>
+            <IonIcon  color="dark" icon={chatboxEllipsesOutline} />      
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
