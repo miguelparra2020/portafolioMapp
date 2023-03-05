@@ -45,7 +45,7 @@
     border-top-right-radius: 90px;
     border-bottom-left-radius: 90px;
     border-bottom-right-radius: 90px;
-    animation-duration: 7s;
+    animation-duration: 6s;
     animation-name: slidein;
 }
 
@@ -60,7 +60,7 @@
     text-align: center;
     vertical-align: top;
     word-spacing: 0px;
-    animation-duration: 8s;
+    animation-duration: 7s;
     animation-name: slidein;
 }
 
@@ -72,6 +72,10 @@
         font-size: 30px;
         font-weight: 600;
         line-height: 30px;       
+    }
+    .detallePerfil{
+        font-size: 12px;
+        line-height: 16px;
     }
 }
 
