@@ -23,8 +23,8 @@ const HomeEspanol: React.FC = () => {
                     Mi expereciencia y proyectos
                 </div>
                 <div className='detailsCardExperiencia'>
-                    👨‍💼 Te invito a visualizar todos los proyectos en los cuales he trabajado arduamente y toda mi expriencia adquirida,
-                    recalco que aun tengo mucho camino por recorrer. 
+                    👨‍💼 Te invito a visualizar todos los proyectos en los cuales he trabajado arduamente y toda mi experiencia adquirida,
+                    recalco que aún tengo mucho camino por recorrer. 
                 </div>
                 <a href='/tab2' className='buttonCardExperiencia'>
                 <div className='buttonCardExperiencia' >
@@ -44,10 +44,10 @@ const HomeEspanol: React.FC = () => {
                     Mi educación
                 </div>
                 <div className='detailsCardExperiencia'>
-                    👨‍🎓 Te invito a visualizar todos mis titulos universitarios, todos los cursos, diplomados y seminarios que he 
+                    👨‍🎓 Te invito a visualizar todos mis títulos universitarios, todos los cursos, diplomados y seminarios que he
                     realizado, me gusta mucho estudiar y cada día aprender más. 
                 </div>
-                <a href='/tab2' className='buttonCardExperiencia'>
+                <a href='/tab3' className='buttonCardExperiencia'>
                 <div className='buttonCardExperiencia' >
                     
                     Ver más &nbsp;
