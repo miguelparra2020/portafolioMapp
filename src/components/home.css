@@ -45,23 +45,103 @@
     border-top-right-radius: 90px;
     border-bottom-left-radius: 90px;
     border-bottom-right-radius: 90px;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-name: slidein;
 }
 
 .detallePerfil{
     margin-left: 10px;
     margin-right: 10px;
-    max-width: 60rem;
+    max-width: 45rem;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 16px;
     line-height: 18px;
     text-decoration: none solid rgb(107, 114, 128);
-    text-align: center;
+    text-align:justify;
     vertical-align: top;
     word-spacing: 0px;
-    animation-duration: 7s;
+    animation-duration: 5s;
     animation-name: slidein;
+}
+
+.cardExperiencia{
+    max-width: 30rem;
+    width: 90%;
+    background-color:  #FFFFFF;
+    border: 1px solid  #D1D5DB;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 15px 30px -6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 6s;
+    animation-name: slidein;
+
+}
+
+.cardExperiencia:hover{
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.titleCardExperiencia{
+    width: 100%;
+    text-align: center;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none solid rgb(0, 0, 0);
+    word-spacing: 0px;
+    border-bottom: 1px solid  #E5E7EB
+}
+.detailsCardExperiencia{
+    width: 100%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none solid rgb(107, 114, 128);
+    text-align: left;
+    word-spacing: 0px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid  #E5E7EB;
+    background-color:  #F9FAFB;
+    box-sizing: border-box;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.buttonCardExperiencia{
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 5px;
+    margin: 5px;
+    border: 0px solid  #E5E7EB;
+    background-color:  #111827;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    word-spacing: 0px;  
+    color: white;
+    cursor: pointer;
+}
+
+.iconWhite{
+    color: #F9FAFB;
+}
+a{
+    text-decoration: none;
 }
 
 

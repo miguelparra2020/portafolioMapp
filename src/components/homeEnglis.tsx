@@ -12,11 +12,20 @@ const HomeEnglis: React.FC = () => {
             </div>
             <br />
             <div className='detallePerfil'>
-            <span>I am a good, human, and integral person. I'm focused on moving forward, 
-            achieving my personal, academic, and professional goals. </span><br />
-            <span>I like challenges because I always think of solutions and alternatives to all the obstacles that arise. </span><br />
-            <span>I am introverted because I like to observe and appreciate my surroundings, 
-            but I can work in a team and value others. I give thanks to God for the present and the opportunities He gives me.</span>
+                I am a good, human, and integral person. I'm focused on moving forward, 
+                achieving my personal, academic, and professional goals. 
+                I like challenges because I always think of solutions and alternatives to all the obstacles that arise. 
+                I am introverted because I like to observe and appreciate my surroundings, 
+                but I can work in a team and value others. I give thanks to God for the present and the opportunities He gives me.
+            </div>
+            <br />
+            <div className='cardExperiencia'>
+                <div className='titleCardExperiencia'>
+                    My exprience and projects 
+                </div>
+                <div className='detailsCardExperiencia'>
+                    My exprience and projects 
+                </div>
             </div>
         </div>
     );
