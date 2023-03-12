@@ -1,5 +1,15 @@
+.cardsProyects{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
 .cardProyecExperi{
-    max-width: 60rem;
+    max-width: 24rem;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -64,4 +74,13 @@
 }
 .contentImg{
     margin-top: 10px;
+}
+.contentTecnologias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tecnologiasImg{
+    width: 20px;
+    height: 20px;
 }

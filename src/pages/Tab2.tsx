@@ -42,9 +42,9 @@ const Tab2: React.FC = () => {
             <div><IonChip onClick={toggleEspanol} outline={true} color="primary"><IonAvatar ><img alt="Bandera española" src="https://res.cloudinary.com/ddllgbo70/image/upload/v1678041782/assetsPortafolioMiguelPaez/icons8-spain-96_aeeghe.png"/>
             </IonAvatar>&nbsp; Español</IonChip></div>
           </div>
-          <div id="inglesContent">
+          <div id="inglesContent" >
               {ingles ? null : (
-                <div>
+                <div >
                   <Tab2ProyectsEnglish/>
                 </div>
               )}
