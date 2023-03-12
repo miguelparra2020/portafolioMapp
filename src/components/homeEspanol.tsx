@@ -20,7 +20,7 @@ const HomeEspanol: React.FC = () => {
             <br />
             <div className='cardExperiencia'>
                 <div className='titleCardExperiencia'>
-                    Mi expereciencia y proyectos
+                    Mi experiencia y proyectos
                 </div>
                 <div className='detailsCardExperiencia'>
                     👨‍💼 Te invito a visualizar todos los proyectos en los cuales he trabajado arduamente y toda mi experiencia adquirida,
