@@ -11,9 +11,8 @@ const HomeFrances: React.FC = () => {
             </div>
             <br />
             <div className='detallePerfil'>
-            Je suis une personne bonne, humaine et intégre. Je suis concentré sur l'avancement, la réalisation de mes objectifs personnels, académiques et professionnels.
-            J'aime les défis car je pense toujours à  des solutions et á des alternatives à  tous les obstacles qui se présentent.
-            Je suis introverti car j'aime observer et apprécier mon environnement, mais je sais travailler en équipe et valoriser les autres. Je suis reconnaissant envers Dieu pour le présent et les opportunités qu'il me donne.     
+                    Je suis une personne bonne, humaine et intègre. Axée sur l'avancement, la réalisation de mes objectifs personnels, académiques et professionnels.
+                    J'apprécie la synergie, l'apprentissage, l'enseignement et l'aide.    
             </div>
             <br />
             <div className='cardExperiencia'>
@@ -21,8 +20,7 @@ const HomeFrances: React.FC = () => {
                 Mon expérience et mes projets
                 </div>
                 <div className='detailsCardExperiencia'>
-                    👨‍💼 Je vous invite à  consulter tous les projets sur lesquels j'ai travaillé avec diligence ainsi que toute l'expérience que j'ai acquise. 
-                    Je tiens à souligner que j'ai encore un long chemin à parcourir.. 
+                    👨‍💼 Projets sur lesquels j'ai travaillé avec acharnement et toute l'expérience que j'ai acquise.
                 </div>
                 <a href='/tab2' className='buttonCardExperiencia'>
                 <div className='buttonCardExperiencia' >
@@ -42,8 +40,7 @@ const HomeFrances: React.FC = () => {
                 Mon éducation
                 </div>
                 <div className='detailsCardExperiencia'>
-                    👨‍🎓 Je vous invite à consulter tous mes diplômes universitaires, tous les cours, diplômes et séminaires 
-                    que j'ai suivis. J'aime beaucoup étudier et apprendre chaque jour davantage.
+                    👨‍🎓 Les diplômes universitaires, les cours, les certificats et les séminaires que j'ai accomplis, j'adore étudier et apprendre chaque jour davantage.
                 </div>
                 <a href='/tab3' className='buttonCardExperiencia'>
                 <div className='buttonCardExperiencia' >

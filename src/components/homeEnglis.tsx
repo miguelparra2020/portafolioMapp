@@ -12,11 +12,8 @@ const HomeEnglis: React.FC = () => {
             </div>
             <br />
             <div className='detallePerfil'>
-                I am a good, human, and integral person. I'm focused on moving forward, 
-                achieving my personal, academic, and professional goals. 
-                I like challenges because I always think of solutions and alternatives to all the obstacles that arise. 
-                I am introverted because I like to observe and appreciate my surroundings, 
-                but I can work in a team and value others. I give thanks to God for the present and the opportunities He gives me.
+            I am a good, humane, and integral person. Focused on moving forward, achieving my personal, academic, and professional goals.
+            I enjoy synergy, learning, teaching, and helping.
             </div>
             <br />
             <div className='cardExperiencia'>
@@ -24,8 +21,7 @@ const HomeEnglis: React.FC = () => {
                 My experience and projects
                 </div>
                 <div className='detailsCardExperiencia'>
-                    👨‍💼 I invite you to view all the projects I have worked on diligently and all the experience I have gained. 
-                    I emphasize that I still have a long way to go.
+                    👨‍💼 Projects in which I have worked tirelessly and all the experience I have gained.
                 </div>
                 <a href='/tab2' className='buttonCardExperiencia'>
                 <div className='buttonCardExperiencia' >
@@ -45,8 +41,7 @@ const HomeEnglis: React.FC = () => {
                     My education
                 </div>
                 <div className='detailsCardExperiencia'>
-                    👨‍🎓 I invite you view all my university degrees, all the courses, diplomats and seminars I have completed. 
-                    I really enjoy studying and learning more every day.
+                    👨‍🎓 University degrees, courses, diplomas, and seminars that I have completed, I absolutely love studying and expanding my knowledge every day.
                 </div>
                 <a href='/tab3' className='buttonCardExperiencia'>
                 <div className='buttonCardExperiencia' >
