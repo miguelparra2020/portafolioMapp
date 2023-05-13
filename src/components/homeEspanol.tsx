@@ -13,9 +13,7 @@ const HomeEspanol: React.FC = () => {
             <br />
             <div className='detallePerfil'>
             Soy una buena persona, humana e íntegra. enfocado en salir adelante, lograr mis metas personales, académicas y laborales.
-            Me gustan los retos, porque siempre pienso en soluciones y alternativas a todos los obstáculos que se presentan. 
-            Soy introvertido porque me gusta observar y apreciar el entorno, pero se trabajar en equipo y valorar a los demás, 
-            le doy gracias a Dios por el presente y las oportunidades que me da. 
+            Me gusta la sinergía, aprender, enseñar y ayudar.
             </div>
             <br />
             <div className='cardExperiencia'>
